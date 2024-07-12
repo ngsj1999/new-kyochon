@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>교촌치킨</title>
+    <style type="text/css">
+         *{margin: 0; padding: 0;}
+        ul{list-style: none;}
+        img{border: 0; vertical-align: top;}
+        a{text-decoration: none; color: black;}
+        
+        #header{
+            width: 1850px;
+            height: 100px;
+            margin: 0 auto;
+        }
+        #header h1{
+            float: left;
+            margin-top: 40px;
+        }
+        #header .menu{
+            float: right;
+        }
+        #header .menu li{
+            float: left;
+            margin-left: 80px;
+            margin-top: 50px;
+            
+        }
+        #header .menu li a:hover{
+            color: yellow;
+        }
+        #section{
+            
+        }
+        #section .ban1{
+            width: 2000px;
+            margin: 0 auto;
+        
+            
+        }
+        #section .jigu{
+            width: 100%;
+            height: 1080px;
+            background-position: center;
+            background-image: url(jigu.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+        }
+        #section .ban1 .poto{
+            background-image: url(sangseng.jfif);
+            width: 100%;  height: 1080px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            }
+        #section .ban1 .poto2{
+            background-image: url(jungdo.jfif);
+            width: 100%;  height: 1080px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            }
+        #section .ban1 .poto3{
+            background-image: url(nanum.jfif);
+            width: 100%;  height: 1080px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            }
+        #section .ban1 .sang{
+            width: 770px; 
+            margin: 0 auto;
+            padding-top: 300px;
+            font-size: 60pt;
+            text-align: center;
+            color: #ffffff;
+            }
+        #section .ban1 .line{
+            width: 770px;
+            height: 7px;
+            background-color: aliceblue;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+        #section .ban1 .text{
+            width: 770px;
+            margin: 0 auto;
+            padding-top: 50px;
+            font-size: 15pt;
+            text-align: center;
+            color: #ffffff;
+        }
+        #section .brand{
+            width: 1320px;
+            margin: 0 auto;
+        }
+        #section .brand h2{
+            margin: 100px 0px;
+            text-align: center;
+            font-size: 50px;
+            margin-top: 100px;
+        }
+        #section .brand .br_name{
+            overflow: hidden;
+        }
+        #section .brand .br_name li{
+            width: 330px;  height: 90px;
+            background-color: white;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            float: left;
+            margin: 0 auto;
+        }
+        #section .brand .br_name li:nth-child(1){
+            background-image: url(kyochon1991.jfif);
+        }
+        #section .brand .br_name li:nth-child(2){
+            background-image: url(flaverse.png);
+        }
+        #section .brand .br_name li:nth-child(3){
+            background-image: url(moon.jfif);
+        }
+        #section .brand .br_name li:nth-child(4){
+            background-image: url(balhyo.jfif);
+        }
+        #section .chicken{
+            overflow: hidden;
+        }
+        #section .chicken li{
+            float: left;
+        }
+        #section .chicken li img{
+            width: 310px;
+            margin:30px 10px;
+            margin-top: 100px;
+        }
+        #section .chicken li p{
+            font-weight: bolder;
+            font-size: 15pt;
+            text-align: center;
+        }
+        #section .franchise{
+            width:100%;
+            margin: 0 auto;
+            /* border: 1px solid red; */
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        #section .franchise h2{
+            margin: 100px 0px;
+            font-size: 40pt;
+            color:black;
+            text-align: center;}
+        #section .franchise .franch{
+            overflow: hidden;
+        }
+        #section .franchise .franch .one>h3{
+            font-size: 22pt;
+            margin-top: 150px;
+            margin-left: 150px;
+        }
+        #section .franchise .franch .one>p{
+            margin-left: 150px;
+            margin-right: 100px;
+            margin-top: 20px;
+            font-size: 10pt;
+            line-height: 20px;
+        }
+        #section .franchise .franch .two>h3{
+            font-size: 22pt;
+            margin-top: 150px;
+            margin-left: 100px;
+        }
+        #section .franchise .franch .two>p{
+            margin-left: 100px;
+            margin-right: 150px;
+            margin-top: 20px;
+            font-size: 10pt;
+            line-height: 20px;
+        }
+        #section .franchise .one{
+            width: 50%;
+            float: left;
+        }
+        #section .franchise li .franch_img{
+            width: 50%; height: 500px;
+            background-image: url(franch_1.jfif);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            float: left;
+        }
+        #section .franchise li .franch_img_2{
+            width: 50%; height: 500px;
+            background-image: url(franch_2.jfif);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            float: left;
+        }
+        #section .franchise .two{
+            width: 50%;
+            float: left;
+        }
+        #section .franchise .franch .one .nemo{
+            width: 120px; height: 40px;
+            font-size: 14px;
+            line-height: 40px;
+            text-align: center;
+            font-weight: bold;
+            background-color: #ffba00;
+            border-radius: 10px;
+            margin-left: 150px;
+            margin-top:50px;
+        }
+        #section .franchise .franch .one .nemo:hover{
+            width: 120px; height: 40px;
+            font-size: 14px;
+            line-height: 40px;
+            text-align: center;
+            font-weight: bold;
+            background-color: #f0c346;
+            border-radius: 10px;
+            margin-left: 150px;
+            margin-top:50px;
+        }
+        #section .franchise .franch .one .nemo:hover a{
+            color:gray;
+        }
+        #section .franchise .franch .two .nemo{
+            width: 120px; height: 40px;
+            font-size: 14px;
+            line-height: 40px;
+            text-align: center;
+            font-weight: bold;
+            background-color: #ffba00;
+            border-radius: 10px;
+            margin-left: 100px;
+            margin-top:50px;
+        }#section .franchise .franch .two .nemo:hover{
+            width: 120px; height: 40px;
+            font-size: 14px;
+            line-height: 40px;
+            text-align: center;
+            font-weight: bold;
+            background-color: #f0c346;
+            border-radius: 10px;
+            margin-left: 100px;
+            margin-top:50px;
+        }
+        #section .franchise .franch .two .nemo:hover a{
+            color:gray;
+        }
+        #section .story{
+            width:1320px;
+            margin: 0 auto;
+            /* border: 1px solid red; */
+        }
+        #section .story h2{
+            margin: 100px 0px;
+            font-size: 40pt;
+            color:black;
+            text-align: center;
+        }
+        #section .story .promo{
+            overflow: hidden;
+        }
+        #section .story .promo li{
+            float: left;
+            margin-right: 8px;
+        }
+        #section .story .promo li .promo_img{
+            width: 324px; height: 470px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #section .story .promo li:nth-child(1) .promo_img{
+            background-image: url(promo1.jfif);
+        }
+        #section .story .promo li:nth-child(2) .promo_img{
+            background-image: url(promo2.jpeg);
+        }
+        #section .story .promo li:nth-child(3) .promo_img{
+            background-image: url(promo3.jfif);
+        }
+        #section .story .promo li:nth-child(4) .promo_img{
+            background-image: url(promo4.jfif);
+        }
+        #section .story .promo li .promo_txt{
+            width: 270px;
+            margin-top: 50px;
+            line-height: 27px;
+        }
+        #section .story .promo li .promo_txt p{
+            font-size: 12px;
+            color:gray;
+            margin-top: 20px;
+        }
+        #section .story .promo li:nth-child(4){
+            margin-right: 0px;
+        }
+        #section .story>h3{
+            width: 150px; height: 30px;
+            border: 2px solid black;
+            text-align: center;
+            line-height: 30px;
+            font-size: 10pt;
+            letter-spacing: -5;
+            margin: 0px auto;
+            margin-top: 70px;
+        }
+        #section .esg{
+            width: 100%; height: 866px;
+            margin: 0 auto;
+        }
+        #section .esg h1{
+            width: 1320px;
+            font-size: 50pt;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 100px;
+        }
+        #section .esg .esg_bg{
+            width: 100%; height: 866px;
+            margin: 0 auto;
+            background-image: url(esg1.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin-top: 100px;
+        }
+        #section .esg .ul_gp{
+            width: 1320px; height: 566px;
+            margin: 0 auto;
+            
+            
+        }
+        #section .esg ul{
+            float: left;
+            width: 400px; height: 409px;
+            margin-left: 29px;
+            background-color: white;
+            border-radius: 20px;
+            margin-top: 90px;
+        }
+        #section .esg li{
+            text-align: center;
+            line-height: 20px;
+            padding-top: 10px;
+        }
+        #section .esg li:nth-child(4){
+            font-weight: bolder;
+            font-size: 15pt;
+        }
+        #section .esg li:nth-child(5){
+            margin-top: 10px;
+        }
+        #section .esg .e1 li:nth-child(1){
+            width: 400px; height: 239px;
+            background-image: url(esg-1.jfif);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 20px 20px 0 0;
+            
+            
+        }
+        #section .esg .e2 li:nth-child(1){
+            width: 400px; height: 239px;
+            background-image: url(esg-2.jfif);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 20px 20px 0 0;
+        }
+        #section .esg .e3 li:nth-child(1){
+            width: 400px; height: 239px;
+            background-image: url(esg-3.jfif);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 20px 20px 0 0;
+        }
+        #section .event{
+            width: 1425px; height:600px;
+            margin: 0 auto;
+        }
+        #section .event h1{
+            width: 1311px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 50px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        #section .event img{
+            width: 1311px; height: 437px;
+            margin: 0 auto;
+            padding-left: 50px;
+
+        }
+        #section .hello{
+            width: 100%; height: 1000px;
+            margin: 0 auto;
+            background-color: #ffba00;
+        }
+        #section .hello_bg{
+            width: 1380px; height: 1000px;
+            margin: 0 auto;
+            
+        }
+        #section .hello h1{
+            width: 1380px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 50px;
+            padding-top: 50px;
+        }
+        #section .hello h2{
+            width: 1380px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 50px;
+            color: white;
+        }
+        #section .hello ul{
+            float: left;
+            width: 428px; height: 550px;
+            margin-left: 29px;
+            background-color: #ffffff;
+            margin-top: 90px;
+            
+        }
+        #section .hello li:nth-child(2){
+            font-weight: bolder;
+            text-align: center;
+            font-size: 17pt;
+            margin-top: 30px;
+        } 
+        #section .hello li:nth-child(3){
+            text-align: center;
+            margin-top: 30px;
+        }
+        #section .hello .hel1 li:nth-child(1){
+            width: 428px; height: 420px;
+            background-image: url(hel1.jfif);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        
+            
+            
+        }
+        #section .hello .hel2 li:nth-child(1){
+            width: 428px; height: 420px;
+            background-image: url(hel2.jfif);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            
+        }
+        #section .hello .hel3 li:nth-child(1){
+            width: 428px; height: 420px;
+            background-image: url(hel3.jfif);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            
+        }
+        #footer{
+            width: 1380px; height: 300px;
+            margin: 0 auto;
+        }
+        #footer .logo2{ 
+            margin-top: 50px;
+            overflow: hidden;
+            float: left;
+        }
+        #footer .number{
+            float: left;
+            line-height: 30px;
+            border: 1px solid red;
+            margin-top: 60px;
+            margin-left: 50px;
+        }
+        #footer .sns_icon{
+            margin-top: 50px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1 class="logo">
+            <img src="logo.png">
+        </h1>
+        <ul class="menu">
+            <li><a href="#">기업정보</a></li>
+            <li><a href="#">사업영역</a></li>
+            <li><a href="#">ESG</a></li>
+            <li><a href="#">홍보센터</a></li>
+            <li><a href="#">투자정보</a></li>
+            <li><a href="#">인재육성</a></li>
+            <li><a href="#">스포츠</a></li>
+        </ul>
+    </div>
+    <div id="section">
+        <ul class="ban1">
+        <div class="jigu"></div>
+            <li class="poto">
+                    <h1 class="sang">상생</h1>
+                    <p class="line"></p>
+                    <p class="text">
+                        더불어 살고 나누며 살아야 한다.<br>
+                        상생하는 사회를 위해 노력합니다.
+                    </p>              
+            </li>
+            <li class="poto2">
+                <h1 class="sang">정도</h1>
+                <p class="line"></p>
+                <p class="text">기업가 정신으로 투명 경영과 윤리 경영을 실천합니다.
+            가맹점 및 파트너사와 공정한 거래를 통해 상생 협력 관계를 구축합니다.
+            우리가 만든 정직한 이야기와 정직한 맛을 소비자에게 전달합니다.</p>
+            </li>
+            <li class="poto3">
+                <h1 class="sang">나눔</h1>
+                <p class="line"></p>
+                <p class="text">더불어 사는 사회에서 기업의 사회적 책임을 다하며 사회 공헌 활동을 전개합니다.
+                미래의 꿈과 희망이 자라도록 교육의 기회를 마련하고 소외 계층을 지원하며 지역 사회 구성원과 함께 성장합니다.</p>
+            </li>
+        </ul>
+        <div class="brand">
+            <h2>BRAND</h2>
+                <ul class="br_name">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <ul class="chicken">
+                    <li>
+                    <img src="ck1.png" alt="오리지날">
+                    <p>교촌시리즈</p>
+                    </li>
+                    <li>
+                    <img src="ck2.png" alt="레드">
+                    <p>레드시리즈</p>
+                    </li>
+                    <li>
+                    <img src="ck3.png" alt="허니">
+                    <p>허니시리즈</p>
+                    </li>
+                    <li>
+                    <img src="ck4.png" alt="블랙">
+                    <p>블랙시크릿시리즈</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="franchise">
+                <h2>가맹점 개설안내</h2>
+                <ul class="franch">
+                    <li>
+                        <div class="one">
+                            <h3>국내 사업문의</h3>
+                            <p>확실한 사명감을 지닌 전체 임직원들의 개척정신과 다년간 직영점을 운영하여 터득한 매장 경영의 노하우를 바탕으로 가맹점주님들의 교육부터 매장 오픈 후 세세한 부분까지 지도해 드리고 있습니다.</p>
+                            <div class="nemo"><a href="#">가맹문의</a></div>
+                        </div>
+                        <div class="franch_img"></div>
+                    </li>
+                    <li>
+                        <div class="franch_img_2"></div>
+                        <div class="two">
+                            <h3>해외 사업문의</h3>
+                            <p>세상의 모든 사람들의 건강하고 맛있는 치킨을 즐길 수 있기를 바라는 마음으로 가장 한국적인 맛으로 치킨 브랜드의 새로운 패러다임을 열었습니다. 세계인이 함께하는 브랜드 '교촌'에 대한 더 큰 가능성을 가지고 맛에 대해 오직 한 길을 달려나가는 글로벌 기업의 리더가 되겠습니다.</p>
+                            <div class="nemo"><a href="#">가맹상담</a></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="story">
+                <h2>STORY</h2>
+                <ul class="promo">
+                    <li>
+                        <div class="promo_img"><a href="#"></a></div>
+                        <div class="promo_txt">
+                            <h4>#행사 #브랜드 #교촌F&amp;B</h4>
+                            <h3>교촌치킨, 'MZ세대 입맛과 마음 사로잡는다'...방송인 노홍철과 '교촌 치톡 콘서트' 개최</h3>
+                            <p>2024.05.09</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="promo_img"><a href="#"></a></div>
+                        <div class="promo_txt">
+                            <h4>#행사 #브랜드</h4>
+                            <h3>교촌치킨, 사흘간 2만명 방문... '제10회 교촌 1991 레이디스 오픈' 성료</h3>
+                            <p>2024.05.07</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="promo_img"><a href="#"></a></div>
+                        <div class="promo_txt">
+                            <h4>#행사 #브랜드 #교촌F&amp;B</h4>
+                            <h3>교촌에프앤비, 3일(금)부터 '제10회 교촌 1991 레이디스 오픈' 개최</h3>
+                            <p>2024.05.02</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="promo_img"><a href="#"></a></div>
+                        <div class="promo_txt">
+                            <h4>#캠페인 #가맹점 #브랜드</h4>
+                            <h3>교촌치킨, 1991명 예비 엄마 위해 준비했다... '교촌 디어 맘(Dear Mom)' 이벤트 실시</h3>
+                            <p>2024.04.30</p>
+                        </div>
+                    </li>
+                </ul>
+                <h3 class="more">블로그 더보기</h3>
+            </div>
+            <div class="esg">
+                <div class="esg_bg">
+                <h1>ESG</h1>
+                <div class="ul_gp">
+                <ul class="e1">
+                    <li></li>
+                    <li></li>
+                    <li>#지역사회</li>
+                    <li>'제10회 교촌 1991 레이디스 오픈'<br>
+                        성료...스포츠 꿈나무에 3천만원 후원
+                    </li>
+                    <li>2024-05-07</li>
+                    </ul>
+                <ul class="e2">
+                    <li></li>
+                    <li></li>
+                    <li>#미래세대#아동건강</li>
+                    <li>교촌치킨,미래세대 '나눔 선순환'<br>
+                        신호탄···'제3회 아동건강 지원사업'··
+                    </li>
+                    <li>2024-04-28</li>
+                </ul>
+                <ul class="e3">
+                    <li></li>
+                    <li></li>
+                    <li>#미래세대#바르고봉사단</li>
+                    <li>교촌에프앤비'바르고 봉사단',<br>
+                        초등학교 특수학급 학생 사회화 훈련···
+                    </li>
+                    <li>2024-04-05</li>
+                </ul>
+            </div>
+            </div>
+            </div>
+            <div class="event">
+                <h1>EVENT</h1>
+                <img src="secret.jfif">
+            </div>
+            <div class="hello">
+                <div class="hello_bg">
+                    <h1>HELLO!</h1>
+                    <h2>Kyochon Instagram</h2>
+                    <div class="ul_gp">
+                    <ul class="hel1">
+                        <li></li>
+                        <li>교촌치킨의 n번쨰 시그니처 메뉴</li>
+                        <li>2024.05.24</li>
+                        </ul>
+                    <ul class="hel2">
+                        <li></li>
+                        <li>교촌 무나매표소에 오신걸 환영합니다</li>
+                        <li>2024.05.16</li>
+                    </ul>
+                    <ul class="hel3">
+                        <li></li>
+                        <li>서포터즈 K-스피커스 2기 모집</li>
+                        <li>2024.05.16</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <h1 class="logo2"><img src="logo.png"></h1>
+            <div class="number">
+                <h3>대표번호</h3>
+                <h2>031.371.3500</h2>
+                <a href="#">이용약관</a>
+                <a href="#">개인정보 처리방침</a>
+                <a href="#">이메일무단수집거부</a>
+                <a href="#">찾아오시는길</a>
+                <p>사업장소재지 :39852 경상북도 칠곡군 가산면 송신로 78</p> 
+                <p>본사 주소 : 13453 경기도 성남시 수정구 금토로80번길 15-3(금토동) 교촌1991빌딩  상호명 : 교촌에프앤비(주)  대표이사 : 송종화</p>
+                <p>소비자상담번호 : 080-320-3000  사업자등록번호 : 513-81-16574   통신판매업신고 : 2012-경상북도칠곡-00023호</p>
+                <p>개인정보보호책임자 : 신용우   COPYRIGHT 2015 © KYOCHON F&B. ALL RIGHTS RESERVED.</p>
+            </div>
+            <div class="sns_icon">
+                <img src="sns1.png">
+                <img src="sns2.png">
+                <img src="sns3.png">
+                <img src="sns4.png">
+            </div>
+
+        </div>
+    </body>
+    </html>

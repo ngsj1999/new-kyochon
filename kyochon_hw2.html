@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숙제2_가맹점_스토리</title>
+    <style type="text/css">
+        ul{list-style: none;}
+        *{margin: 0 auto; padding: 0;}
+        #section .franchise{
+            width:100%;
+            margin: 0 auto;
+            /* border: 1px solid red; */
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        #section .franchise h2{
+            margin: 100px 0px;
+            font-size: 40pt;
+            color:black;
+            text-align: center;}
+        #section .franchise .franch{
+            overflow: hidden;
+        }
+        #section .franchise .franch .one>h3{
+            font-size: 22pt;
+            margin-top: 150px;
+            margin-left: 150px;
+        }
+        #section .franchise .franch .one>p{
+            margin-left: 150px;
+            margin-right: 100px;
+            margin-top: 20px;
+            font-size: 10pt;
+        }
+        #section .franchise .franch .two>h3{
+            font-size: 22pt;
+            margin-top: 150px;
+            margin-left: 100px;
+        }
+        #section .franchise .franch .two>p{
+            margin-left: 100px;
+            margin-right: 150px;
+            margin-top: 20px;
+            font-size: 10pt;
+        }
+        #section .franchise .one{
+            width: 50%;
+            float: left;
+        }
+        #section .franchise li .franch_img{
+            width: 50%; height: 500px;
+            background-image: url(franch_1.jfif);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            float: left;
+        }
+        #section .franchise li .franch_img_2{
+            width: 50%; height: 500px;
+            background-image: url(franch_2.jfif);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            float: left;
+        }
+        #section .franchise .two{
+            width: 50%;
+            float: left;
+        }
+        #section .franchise .franch .one .nemo{
+            width: 120px; height: 40px;
+            font-size: 14px;
+            line-height: 40px;
+            text-align: center;
+            font-weight: bold;
+            background-color: #ffba00;
+            border-radius: 10px;
+            margin-left: 150px;
+            margin-top:50px;
+        }
+        #section .franchise .franch .one .nemo:hover{
+            width: 120px; height: 40px;
+            font-size: 14px;
+            line-height: 40px;
+            text-align: center;
+            font-weight: bold;
+            background-color: #f0c346;
+            border-radius: 10px;
+            margin-left: 150px;
+            margin-top:50px;
+        }
+        #section .franchise .franch .one .nemo:hover a{
+            color:gray;
+        }
+        #section .franchise .franch .two .nemo{
+            width: 120px; height: 40px;
+            font-size: 14px;
+            line-height: 40px;
+            text-align: center;
+            font-weight: bold;
+            background-color: #ffba00;
+            border-radius: 10px;
+            margin-left: 100px;
+            margin-top:50px;
+        }#section .franchise .franch .two .nemo:hover{
+            width: 120px; height: 40px;
+            font-size: 14px;
+            line-height: 40px;
+            text-align: center;
+            font-weight: bold;
+            background-color: #f0c346;
+            border-radius: 10px;
+            margin-left: 100px;
+            margin-top:50px;
+        }
+        #section .franchise .franch .two .nemo:hover a{
+            color:gray;
+        }
+        #section .story{
+            width:1320px;
+            margin: 0 auto;
+            /* border: 1px solid red; */
+        }
+        #section .story h2{
+            margin: 100px 0px;
+            font-size: 40pt;
+            color:black;
+            text-align: center;
+        }
+        #section .story .promo{
+            overflow: hidden;
+        }
+        #section .story .promo li{
+            float: left;
+            margin-right: 8px;
+        }
+        #section .story .promo li .promo_img{
+            width: 324px; height: 470px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #section .story .promo li:nth-child(1) .promo_img{
+            background-image: url(promo1.jfif);
+        }
+        #section .story .promo li:nth-child(2) .promo_img{
+            background-image: url(promo2.jpeg);
+        }
+        #section .story .promo li:nth-child(3) .promo_img{
+            background-image: url(promo3.jfif);
+        }
+        #section .story .promo li:nth-child(4) .promo_img{
+            background-image: url(promo4.jfif);
+        }
+        #section .story .promo li .promo_txt{
+            width: 270px;
+            margin-top: 50px;
+            line-height: 27px;
+        }
+        #section .story .promo li .promo_txt p{
+            font-size: 12px;
+            color:gray;
+            margin-top: 20px;
+        }
+        #section .story .promo li:nth-child(4){
+            margin-right: 0px;
+        }
+        #section .story>h3{
+            width: 150px; height: 30px;
+            border: 2px solid black;
+            text-align: center;
+            line-height: 30px;
+            font-size: 10pt;
+            letter-spacing: -5;
+            margin: 0px auto;
+            margin-top: 70px;
+        }
+    </style>
+</head>
+<body>
+    <div id="section">
+    <div class="franchise">
+            <h2>가맹점 개설안내</h2>
+            <ul class="franch">
+                <li>
+                    <div class="one">
+                        <h3>국내 사업문의</h3>
+                        <p>확실한 사명감을 지닌 전체 임직원들의 개척정신과 다년간 직영점을 운영하여 터득한 매장 경영의 노하우를 바탕으로 가맹점주님들의 교육부터 매장 오픈 후 세세한 부분까지 지도해 드리고 있습니다.</p>
+                        <div class="nemo"><a href="#">가맹문의</a></div>
+                    </div>
+                    <div class="franch_img"></div>
+                </li>
+                <li>
+                    <div class="franch_img_2"></div>
+                    <div class="two">
+                        <h3>해외 사업문의</h3>
+                        <p>세상의 모든 사람들의 건강하고 맛있는 치킨을 즐길 수 있기를 바라는 마음으로 가장 한국적인 맛으로 치킨 브랜드의 새로운 패러다임을 열었습니다. 세계인이 함께하는 브랜드 '교촌'에 대한 더 큰 가능성을 가지고 맛에 대해 오직 한 길을 달려나가는 글로벌 기업의 리더가 되겠습니다.</p>
+                        <div class="nemo"><a href="#">가맹상담</a></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="story">
+            <h2>STORY</h2>
+            <ul class="promo">
+                <li>
+                    <div class="promo_img"><a href="#"></a></div>
+                    <div class="promo_txt">
+                        <h4>#행사 #브랜드 #교촌F&amp;B</h4>
+                        <h3>교촌치킨, 'MZ세대 입맛과 마음 사로잡는다'...방송인 노홍철과 '교촌 치톡 콘서트' 개최</h3>
+                        <p>2024.05.09</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="promo_img"><a href="#"></a></div>
+                    <div class="promo_txt">
+                        <h4>#행사 #브랜드</h4>
+                        <h3>교촌치킨, 사흘간 2만명 방문... '제10회 교촌 1991 레이디스 오픈' 성료</h3>
+                        <p>2024.05.07</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="promo_img"><a href="#"></a></div>
+                    <div class="promo_txt">
+                        <h4>#행사 #브랜드 #교촌F&amp;B</h4>
+                        <h3>교촌에프앤비, 3일(금)부터 '제10회 교촌 1991 레이디스 오픈' 개최</h3>
+                        <p>2024.05.02</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="promo_img"><a href="#"></a></div>
+                    <div class="promo_txt">
+                        <h4>#캠페인 #가맹점 #브랜드</h4>
+                        <h3>교촌치킨, 1991명 예비 엄마 위해 준비했다... '교촌 디어 맘(Dear Mom)' 이벤트 실시</h3>
+                        <p>2024.04.30</p>
+                    </div>
+                </li>
+            </ul>
+            <h3 class="more">블로그 더보기</h3>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+스타일
+
+        #section .brand{
+            width:1320px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #section .brand h2{
+            margin: 100px 0px;
+            font-size: 40pt;
+            color:black;
+        }
+        #section .brand .br_name{
+            overflow: hidden;
+        }
+        #section .brand .br_name li{
+            width: 330px;  height: 90px;
+            background-color: white;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            float: left;
+            margin: 0 auto;
+        }
+        #section .brand .br_name li:nth-child(1){
+            background-image: url(name1.jfif);
+        }
+         #section .brand .br_name li:nth-child(2){
+            background-image: url(name2.png);
+        }
+         #section .brand .br_name li:nth-child(3){
+            background-image: url(name3.jfif);
+        }
+         #section .brand .br_name li:nth-child(4){
+            background-image: url(name4.jfif);
+        }
+        #section .chicken{
+            overflow: hidden;
+        }
+        #section .chicken li{
+            float: left;
+        }
+        #section .chicken li img{
+            width: 310px;
+            margin:30px 10px;
+            margin-top: 100px;
+        }
+        #section .chicken li p{
+            font-weight: bold; 
+        }
+
+
+--------------------------------------------------------------------------------------------------------------
+
+html
+
+        <div class="brand">
+           <h2>BRAND</h2>
+            <ul class="br_name">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul class="chicken">
+                <li>
+                <img src="orign.png" alt="오리지날">
+                <p>교촌시리즈</p>
+                </li>
+                <li>
+                <img src="red.png" alt="레드">
+                <p>레드시리즈</p>
+                </li>
+                <li>
+                <img src="heony.png" alt="허니">
+                <p>허니시리즈</p>
+                </li>
+                <li>
+                <img src="black.png" alt="블랙">
+                <p>블랙시크릿시리즈</p>
+                </li>
+            </ul>
+        </div>
